@@ -97,6 +97,7 @@ resource "docker_image" "php-fpm" {
 }
 ```
 #### Menjalankan file konfigurasi
+Untuk menjalankan perintah ```apply```, pastika bahwa anda sudah berada dalam satu direktori dengan file konfigurasi yang tadi anda buat.
 ```
 terraform apply
 ```
