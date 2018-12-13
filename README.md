@@ -140,17 +140,23 @@ Commercial support is available at
 ```
 Atau dapat juga dilakukan dengan mengaksesnya melalui web browser menggunakan url http://localhost:9090
 ### Command Line
-Beberapa Command Line yang dapat dijalankan pada Terraform diantaranya:
-##### apply
-Digunakan untuk mengaplikasikan atau menerapkan file konfigurasi Terraform menjadi sebuah infrastruktur seperti yang sudah didefinisikan di dalam file konfigurasi.
-##### show
-Digunakan untuk menampilkan state dari infrastruktur yang kita deploy, akan menampilkan output konfigurasi yang berjalan saat ini pada infrastruktur yang kita buat.
-##### validate
-Digunakan untuk melakukan validasi terhadap file konfigurasi yang kita buat
-##### destroy
-Digunakan untuk menghancurkan atau mematikan infrastruktur yang dimanage oleh Terraform. Ketika perinta ini dijalankan, maka conatiner yang tadi kita deploy menggunakan Terraform akan dimatikan dan diremove.
 
-__  __
+
+Beberapa Command Line yang dapat dijalankan pada Terraform diantaranya:
+#####  ```apply```
+Digunakan untuk mengaplikasikan atau menerapkan file konfigurasi Terraform menjadi sebuah infrastruktur seperti yang sudah didefinisikan di dalam file konfigurasi.
+##### ```show```
+Digunakan untuk menampilkan state dari infrastruktur yang kita deploy, akan menampilkan output konfigurasi yang berjalan saat ini pada infrastruktur yang kita buat.
+##### ```validate```
+Digunakan untuk melakukan validasi terhadap file konfigurasi yang kita buat
+##### ```destroy```
+Digunakan untuk menghancurkan atau mematikan infrastruktur yang dimanage oleh Terraform. Ketika perinta ini dijalankan, maka conatiner yang tadi kita deploy menggunakan Terraform akan dimatikan dan diremove.
+##### ```refresh```
+Digunakan untuk melakukan refresh terhadap file konfigurasi lokal berdasarkan infrastruktur yang berjalan secara real. Penggunaan perintah ini tidak akan membuat infrastruktur yang kita buat berubah, namun akan mengubah file konfigurasi Terraform yang ada.
+#### ```plan```
+Digunakan untuk melakukan generate dan kemudian menampilkan plan yang akan dijalankan.
+
+**_Kita harus berada dalam satu direktori dengan file konfigurasi ketika menjalankan command line Terraform_**
 
 
 
